@@ -4,7 +4,7 @@ const fn1 = () => {
   return Promise.resolve(5);
 };
 
-const fn2 = () => new Promise(resolve => {
+const fn2 = () => new Promise((resolve) => {
   console.log('fn2');
 
   setTimeout(() => resolve(1.4), 1000);
@@ -19,7 +19,7 @@ function reduce(memo, val) {
 }
 
 function promiseReduce(asyncFuncArr, reduce, initVal) {
-  return Promise.all(asyncFuncArr).then((val) => val.reduce(reduce, initVal))
+  return Promise.all(asyncFuncArr).then((val) => val.reduce(reduce, initVal));
 }
 
 promiseReduce(asyncFuncArr, reduce, 1).then((sum) => {

@@ -1,0 +1,25 @@
+{
+  "name": "valeev-grigoriy-otus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-config-airbnb-base": "^14.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Argggh123/valeev-grigoriy-otus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Argggh123/valeev-grigoriy-otus/issues"
+  },
+  "homepage": "https://github.com/Argggh123/valeev-grigoriy-otus#readme"
+}
