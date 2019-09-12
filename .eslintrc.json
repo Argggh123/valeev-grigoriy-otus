@@ -16,7 +16,14 @@
         "sourceType": "module"
     },
     "rules": {
-        "comma-dangle": ["error", "always"],
-        "quotes": ["error", "single"]
+        "no-undef": "off",
+        "no-useless-constructor": "off",
+        "no-empty-function": "off",
+        "no-throw-literal": "off",
+        "import/prefer-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "import/no-unresolved": "off",
+        "no-console": "off",
+        "max-len": "warn"
     }
 }
