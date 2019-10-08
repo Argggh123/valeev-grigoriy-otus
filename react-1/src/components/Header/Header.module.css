@@ -1,0 +1,16 @@
+.Header {
+    flex-grow: 1;
+}
+
+.MenuButton {
+    margin-right: 16px;
+}
+
+.Title {
+    flex-grow: 1;
+}
+
+.AppBar {
+    background: url('../../static/images/headerBackground.jpg') no-repeat center top;
+    background-size: cover;
+}
