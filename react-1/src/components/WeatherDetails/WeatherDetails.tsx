@@ -9,8 +9,9 @@ import fog from '../../static/images/fog.jpg'
 import cloudy from '../../static/images/cloudy.png'
 
 const WeatherDetails = (props: any) => {
-  const { name, data, isFavorite } = props.data;
+  const { name, isFavorite } = props.data;
   const { changeFavoriteStatus } = props;
+  const currentWeather = props.weather;
 
   const getWeatherBlock = (src: string, name: string) => (
     <CardMedia image={src} className={classes.CardMedia}>
@@ -55,10 +56,10 @@ const WeatherDetails = (props: any) => {
 
   return (
     <Card className={classes.WeatherDetails}>
-      {getWeatherTypeImage(data.weatherType)}
+      {getWeatherTypeImage(currentWeather.weatherType)}
       <CardContent>
-        <p>Ветер: {data.wind.direction} - {data.wind.speed}</p>
-        <p>Температура воздуха: {data.temperature}º{data.temperatureType}</p>
+        <p>Ветер: {currentWeather.wind.direction} - {currentWeather.wind.speed}</p>
+        <p>Температура воздуха: {currentWeather.temperature}º{currentWeather.temperatureType}</p>
       </CardContent>
     </Card>
   );
